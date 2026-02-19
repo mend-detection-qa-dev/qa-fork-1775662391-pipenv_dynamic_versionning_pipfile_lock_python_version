@@ -79,9 +79,9 @@
           "value": "python version set to: 3.10.*"
         },
         {
-          "operator": "regex",
-          "value": "Using * (3.10.*) to create virtualenv*"
-        }
+    "operator": "regex",
+    "value": "Using .+ \\(3\\.10\\.\\d+\\) to create virtualenv"
+  }
       ],
       "_comment_expected_log_lines": "Optional. List of log lines to validate. Each entry should have an 'operator' (eq or regex) and 'value' (string or regex pattern). Example: [{'operator': 'eq', 'value': 'Python version: 3.11'}, {'operator': 'regex', 'value': 'Python version: \\d+\\.\\d+'}]. If not provided, only log attachment will be performed."
     },
